@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Blog Project</title>
+    <link rel="stylesheet" href="./output/tailwind.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-poppins text-gray-600">
+    <!-- Header nav bar part -->
+    <nav class="bg-slate-300 shadow-sm shadow-slate-300">
+      <div class="container mx-auto px-4 py-3 flex items-center">
+        <a href="#">
+          <img src="./images/ghazi-logos.jpeg" width="70" height="70" class="rounded-full" alt="Company logo" />
+        </a>
+        <div class="ml-12 lg:flex space-x-5 hidden">
+          <a href="#" class="flex items-center font-semibold text-md hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="fas fa-home"></i>
+            </span>
+            Home
+          </a>
+        </div>
+        <div class="ml-12 lg:flex space-x-5 hidden">
+          <a href="#" class="flex items-center font-semibold text-md hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            About
+          </a>
+        </div>
+        <div class="ml-12 lg:flex space-x-5 hidden">
+          <a href="#" class="flex items-center font-semibold text-md hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="fas fa-phone"></i>
+            </span>
+            Contact
+          </a>
+        </div>
+
+        <div class="relative ml-auto hidden lg:block">
+          <span class="absolute left-3 text-sm top-2 text-gray-600">
+            <i class="fas fa-search"></i>
+          </span>
+          <input type=" text  " placeholder="search..." class="block w-full rounded-3xl pl-11 pr-2 py-2 focus:outline-none bg-gray-200 text-sm text-gray-600 shadow-sm shadow-slate-300" />
+        </div>
+        <div class="ml-5">
+          <a href="#" class="flex items-center font-semibold text-md text-gray-900 hover:text-blue-700 transition">
+            <span class="mr-2">
+              <i class="fas fa-user"></i>
+            </span>
+            Login/Register
+          </a>
+        </div>
+        <div class="text-xl text-gray-700 cursor-pointer ml-4 xl:hidden block hover:text-blue-700 transition">
+          <i class="fas fa-bars" id="open-sidebar"> </i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End header part -->
+
+    <div class="py-12 bg-gray-200">
+      <div class="container mx-auto px-4 flex flex-wrap lg:flex-nowrap">
+        <div class="w-3/12 hidden xl:block">
+          <div class="bg-white shadow-sm shadow-white rounded-xl p-4">
+            <h3 class="text-xl font-semibold text-gray-700 font-roboto">Catagories</h3>
+            <!-- catogory sidebar -->
+            <div class="text-gray-700 space-y-2 mt-2">
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Beauty</span>
+                <span class="font-normal ml-auto"> (12) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>BUisness</span>
+                <span class="font-normal ml-auto"> (5) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Fashion</span>
+                <span class="font-normal ml-auto"> (9) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>food</span>
+                <span class="font-normal ml-auto"> (8) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>nature</span>
+                <span class="font-normal ml-auto"> (3) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>music</span>
+                <span class="font-normal ml-auto"> (13) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>news</span>
+                <span class="font-normal ml-auto"> (8) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>people</span>
+                <span class="font-normal ml-auto"> (9) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>sports</span>
+                <span class="font-normal ml-auto"> (11) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>technology</span>
+                <span class="font-normal ml-auto"> (15) </span>
+              </a>
+            </div>
+            <!-- end catagory sidebar -->
+          </div>
+
+          <!-- START RANDOM POST -->
+          <div class="bg-white shadow-sm shadow-white rounded-xl p-4 mt-6">
+            <h3 class="text-xl font-semibold text-gray-700 font-roboto">Randome Posts</h3>
+
+            <div class="mt-4">
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic1.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic2.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/ghazi-orange.jpeg " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic4.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic5.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- END RANDOM POST -->
+        </div>
+
+        <div class="xl:w-6/12 lg:w-9/12 w-full xl:ml-6 lg:mr-6">
+          <div class="flex bg-white px-3 py-4 justify-between items-center rounded-sm">
+            <h5 class="text-base uppercase font-semibold font-roboto">BUSINESS</h5>
+            <a href="#" class="text-white py-1 px-3 rounded-xl uppercase text-sm bg-blue-500 border border border border-blue-500 hover:text-blue-500 hover:bg-transparent transition">See More</a>
+          </div>
+          <!-- start blog-post -->
+          <div class="rounded-sm overflow-hidden bg-white shadow-sm">
+            <a href="#" class="block rounded-md overflow-hidden">
+              <img src="./images/pic6.png" class="w-full h-96 object-cover transform hover:scale-110 transitio duration-500" alt="" />
+            </a>
+            <div class="p-4 pb-5">
+              <a href="view.html">
+                <h2 class="block text-2xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, adipisci?</h2>
+              </a>
+              <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam doloribus quos odio eum voluptas cumque animi eveniet temporibus inventore, aliquid tenetur provident vel quae laboriosam.</p>
+              <div class="mt-3 flex space-x-4">
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-xs">
+                    <i class="far fa-user"></i>
+                    Bloging Tips
+                  </span>
+                </div>
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-xs">
+                    <i class="far fa-clock"></i>
+                    July 15, 2022
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end blog main post -->
+
+          <!-- start all post -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="rounded-xl bg-white p-4 pb-5 shadow-sm">
+              <a href="#" class="block rounded-md overflow-hidden">
+                <img src="./images/pic5.png" class="w-full h-60 object-cover transform hover:scale-110 transitio duration-500" alt="" />
+              </a>
+
+              <div class="mt-3">
+                <a href="#">
+                  <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                </a>
+                <div class="mt-3 flex space-x-4">
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-2 text-xs">
+                      <i class="far fa-user"></i>
+                      Bloging Tips
+                    </span>
+                  </div>
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-2 text-xs">
+                      <i class="far fa-clock"></i>
+                      July 15, 2022
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl bg-white p-4 pb-5 shadow-sm">
+              <a href="#" class="block rounded-md overflow-hidden">
+                <img src="./images/pic1.png" class="w-full h-60 object-cover transform hover:scale-110 transitio duration-500" alt="" />
+              </a>
+
+              <div class="mt-3">
+                <a href="#">
+                  <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                </a>
+                <div class="mt-3 flex space-x-4">
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-2 text-xs">
+                      <i class="far fa-user"></i>
+                      Bloging Tips
+                    </span>
+                  </div>
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-2 text-xs">
+                      <i class="far fa-clock"></i>
+                      July 15, 2022
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl bg-white p-4 pb-5 shadow-sm">
+              <a href="#" class="block rounded-md overflow-hidden">
+                <img src="./images/pic2.png" class="w-full h-60 object-cover transform hover:scale-110 transitio duration-500" alt="" />
+              </a>
+
+              <div class="mt-3">
+                <a href="#">
+                  <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                </a>
+                <div class="mt-3 flex space-x-4">
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-2 text-xs">
+                      <i class="far fa-user"></i>
+                      Bloging Tips
+                    </span>
+                  </div>
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-2 text-xs">
+                      <i class="far fa-clock"></i>
+                      July 15, 2022
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl bg-white p-4 pb-5 shadow-sm">
+              <a href="#" class="block rounded-md overflow-hidden">
+                <img src="./images/ghazi-logos_transparent.png" class="w-full h-60 object-cover transform hover:scale-110 transitio duration-500" alt="" />
+              </a>
+
+              <div class="mt-3">
+                <a href="#">
+                  <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                </a>
+                <div class="mt-3 flex space-x-4">
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-2 text-xs">
+                      <i class="far fa-user"></i>
+                      Bloging Tips
+                    </span>
+                  </div>
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-2 text-xs">
+                      <i class="far fa-clock"></i>
+                      July 15, 2022
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end all post -->
+        </div>
+
+        <div class="lg:w-3/12 w-full mt-8 lg:mt-0">
+          <!-- start social plugin -->
+          <div class="w-full bg-white shadow-sm rounded-xl p-4">
+            <h3 class="text-xl font-semibold text-gray-700 font-roboto">Social plugins</h3>
+            <div class="flex gap-2 mt-4">
+              <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border border border-gray-400 text-base text-gray-800">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border border border-gray-400 text-base text-gray-800">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border border border-gray-400 text-base text-gray-800">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border border border-gray-400 text-base text-gray-800">
+                <i class="fab fa-pinterest"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-sm flex items-center justify-center border border border border-gray-400 text-base text-gray-800">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <!-- end social plugin -->
+
+          <!-- start popular post -->
+
+          <div class="bg-white shadow-sm shadow-white rounded-xl p-4 mt-6">
+            <h3 class="text-xl font-semibold text-gray-700 font-roboto">Popular Posts</h3>
+
+            <div class="mt-4">
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic1.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic2.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic3.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic4.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="flex group mt-4">
+                <div class="flex-shrink-0">
+                  <img src="./images/pic5.png " class="h-14 w-20 rounded object-cover hover:brightness-200" alt="" />
+                </div>
+
+                <div class="flex-grow pl-3">
+                  <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-blue-500">Team Bitboss geared up to attend</h5>
+
+                  <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                      <i class="far fa-clock"> </i>
+                    </span>
+                    May 29, 2022
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- end popular post -->
+
+          <!-- start tags -->
+
+          <div class="w-full bg-white shadow-sm rounded-xl p-4 mt-4">
+            <h3 class="text-xl font-semibold text-gray-700 font-roboto">Tags</h3>
+            <div class="flex items-center flex-wrap gap-2 mt-4">
+              <a href="#" class="px-3 py-1 text-sm border border-gray-300 rounded-sm transition hover:bg-blue-500 hover:text-white">Beauty</a>
+              <a href="#" class="px-3 py-1 text-sm border border-gray-300 rounded-sm transition hover:bg-blue-500 hover:text-white">Sports</a>
+              <a href="#" class="px-3 py-1 text-sm border border-gray-300 rounded-sm transition hover:bg-blue-500 hover:text-white">Buisness</a>
+              <a href="#" class="px-3 py-1 text-sm border border-gray-300 rounded-sm transition hover:bg-blue-500 hover:text-white">Programming</a>
+              <a href="#" class="px-3 py-1 text-sm border border-gray-300 rounded-sm transition hover:bg-blue-500 hover:text-white">Java</a>
+              <a href="#" class="px-3 py-1 text-sm border border-gray-300 rounded-sm transition hover:bg-blue-500 hover:text-white">Laravel</a>
+              <a href="#" class="px-3 py-1 text-sm border border-gray-300 rounded-sm transition hover:bg-blue-500 hover:text-white">Computer</a>
+              <a href="#" class="px-3 py-1 text-sm border border-gray-300 rounded-sm transition hover:bg-blue-500 hover:text-white">php</a>
+            </div>
+          </div>
+          <!-- end tags -->
+        </div>
+      </div>
+    </div>
+
+    <!-- start mobile menue -->
+    <div class="fixed w-full h-full bg-block bg-opacity-25 left-0 top-0 opacity-0 invisible transition-all duration-500 xl:hidden" id="sidebar-wrapper">
+      <div class="fixed-top-0 w-72 h-full bg-white shadow-sm flex flex-co; transition-all duration-500 -left-80" id="sidebar">
+        
+        <div class="lg:hidden">
+          <div class="relative mx-3 mt-3 shadow-sm">
+            <span class="absolute left-3 text-sm top-2 text-gray-600">
+              <i class="fas fa-search"></i>
+            </span>
+            <input type=" text  " placeholder="search..." class="block w-full rounded-3xl pl-11 pr-2 py-2 focus:outline-none bg-gray-200 text-sm text-gray-600 shadow-sm shadow-slate-300" />
+          </div>
+
+          
+          <h3 class="text-xl font-semibold text-gray-700 mb-1 font-roboto pl-3 pt-3">Menue</h3>
+          <div class="">
+            <a href="#" class="flex  px-4 py-1 items-center font-semibold text-md hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="fas fa-home"></i>
+              </span>
+              Home
+            </a>
+          </div>
+          <div class="">
+            <a href="#" class="flex px-4 py-1 items-center font-semibold text-md hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              About
+            </a>
+          </div>
+          <div class="">
+            <a href="#" class="flex px-4 py-1 items-center font-semibold text-md hover:text-blue-700 transition">
+              <span class="mr-2">
+                <i class="fas fa-phone"></i>
+              </span>
+              Contact
+            </a>
+          </div>
+
+          <div class="bg-white shadow-sm shadow-white rounded-xl p-4">
+            <h3 class="text-xl font-semibold text-gray-700 font-roboto">Catagories</h3>
+            <!-- catogory sidebar -->
+            <div class="text-gray-700 space-y-2 mt-2">
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Beauty</span>
+                <span class="font-normal ml-auto"> (12) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>BUisness</span>
+                <span class="font-normal ml-auto"> (5) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>Fashion</span>
+                <span class="font-normal ml-auto"> (9) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>food</span>
+                <span class="font-normal ml-auto"> (8) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>nature</span>
+                <span class="font-normal ml-auto"> (3) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>music</span>
+                <span class="font-normal ml-auto"> (13) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>news</span>
+                <span class="font-normal ml-auto"> (8) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>people</span>
+                <span class="font-normal ml-auto"> (9) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>sports</span>
+                <span class="font-normal ml-auto"> (11) </span>
+              </a>
+              <a href="#" class="flex items-center font-semibold leading-4 hover:text-blue-700 transition uppercase">
+                <span class="mr-2">
+                  <i class="far fa-folder-open"></i>
+                </span>
+                <span>technology</span>
+                <span class="font-normal ml-auto"> (15) </span>
+              </a>
+            </div>
+            <!-- end catagory sidebar -->
+          </div>
+          
+          
+          <!--  -->
+          <!--  -->
+          <!--  -->
+        </div>
+      </div>
+    </div>
+    <!-- end mobile menue -->
+
+    <footer class="border-t py-4">
+      <p class="text-sm text-center">
+        Copyright@ 2022 <span class="font-semibold"> EasyLearning </span>
+        All Rights Reserved
+      </p>
+    </footer>
+
+    <script>
+      document.querySelector('#open-sidebar').addEventListener('click', function () {
+        document.querySelector('#sidebar').classList.remove('left-80')
+        document.querySelector('#sidebar').classList.add('left-0')
+        document.querySelector('#sidebar-wrapper').classList.remove('opacity-0')
+        document.querySelector('#sidebar-wrapper').classList.remove('invisible')
+      })
+
+      document.body.addEventListener('click', function (e) {
+        if (e.target.id === 'sidebar-wrapper') {
+          document.querySelector('#sidebar').classList.add('left-80')
+          document.querySelector('#sidebar').classList.remove('left-0')
+          document.querySelector('#sidebar-wrapper').classList.add('opacity-0')
+          document.querySelector('#sidebar-wrapper').classList.add('invisible')
+        }
+      })
+    </script>
+  </body>
+</html>
